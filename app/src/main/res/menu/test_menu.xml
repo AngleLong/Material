@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_1"
+        android:icon="@mipmap/ic_launcher"
+        android:title="标题1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_2"
+        android:title="标题1"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_3"
+        android:icon="@mipmap/ic_launcher"
+        android:title="标题1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_4"
+        android:icon="@mipmap/ic_launcher"
+        android:title="标题1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_5"
+        android:icon="@mipmap/ic_launcher"
+        android:title="标题1"
+        app:showAsAction="ifRoom" />
+
+</menu>

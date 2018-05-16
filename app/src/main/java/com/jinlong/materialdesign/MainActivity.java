@@ -1,5 +1,6 @@
 package com.jinlong.materialdesign;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -37,5 +38,29 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    /**
+     * 展示Chip和ChipGroup的使用
+     */
+    public void chip(View view) {
+        Intent intent = new Intent(this, ChipActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 演示新版本的CardView
+     */
+    public void cardView(View view) {
+        Intent intent = new Intent(this, CardViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 演示新版本的BottomNavigationView
+     */
+    public void bottomNavigationView(View view) {
+        Intent intent = new Intent(this, BottomActivity.class);
+        startActivity(intent);
     }
 }

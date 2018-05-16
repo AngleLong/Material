@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChipActivity">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/cat_chip_entry_chip"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        app:chipBackgroundColor="#223344"
+        app:chipIcon="@mipmap/ic_domain_white_24dp"
+        app:chipText="这是一个chip" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/cat_chip_filter_chip"
+        style="@style/Widget.MaterialComponents.Chip.Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        app:checkedIcon="@mipmap/ic_cake_white_24dp"
+        app:chipText="又一个Chip" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/cat_chip_choice_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        app:chipText="还有一个chip" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/cat_chip_action_chip"
+        style="@style/Widget.MaterialComponents.Chip.Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        app:checkedIcon="@mipmap/ic_cake_black_24dp"
+        app:chipIcon="@mipmap/ic_cake_white_24dp"
+        app:chipText="又来了一个chip" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:chipSpacing="20dp"
+        app:singleLine="true" />
+    </HorizontalScrollView>
+
+</LinearLayout>

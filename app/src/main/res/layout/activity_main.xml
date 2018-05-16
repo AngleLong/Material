@@ -22,5 +22,55 @@
             android:textSize="16sp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!--这里直接展示相应的Button算了，这样少写一个页面-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="默认的展现样式"
+        app:additionalPaddingLeftForIcon="10dp"
+        app:additionalPaddingRightForIcon="10dp"
+        app:icon="@mipmap/ic_cake_white_24dp"
+        app:iconPadding="10dp"
+        app:iconTint="#098765"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBal" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="chip"
+        android:text="chip和ChipGroup的使用"
+        app:icon="@mipmap/ic_domain_white_24dp"
+        app:iconTint="#486a8c"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mBtn1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="cardView"
+        android:text="CardView的演示"
+        app:icon="@mipmap/ic_cake_white_24dp"
+        app:iconTint="#486a8c"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mBtn2" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="bottomNavigationView"
+        android:text="BottomNavigationView的演示"
+        app:icon="@mipmap/ic_cake_white_24dp"
+        app:iconTint="#486a8c"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mBtn3" />
 </android.support.constraint.ConstraintLayout>

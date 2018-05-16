@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_1"
-        android:icon="@mipmap/ic_launcher"
-        android:title="标题1"
-        app:showAsAction="ifRoom" />
-
+        android:id="@+id/action_page_1"
+        android:enabled="true"
+        android:icon="@mipmap/ic_cake_white_24dp"
+        android:title="标签1" />
     <item
-        android:id="@+id/menu_2"
-        android:title="标题1"
-        app:actionViewClass="android.support.v7.widget.SearchView"
-        app:showAsAction="ifRoom" />
-
+        android:id="@+id/action_page_2"
+        android:enabled="true"
+        android:icon="@mipmap/ic_school_white_24dp"
+        android:title="标签2" />
     <item
-        android:id="@+id/menu_3"
-        android:icon="@mipmap/ic_launcher"
-        android:title="标题1"
-        app:showAsAction="ifRoom" />
-
+        android:id="@+id/action_page_3"
+        android:enabled="true"
+        android:icon="@mipmap/ic_sentiment_dissatisfied_white_24dp"
+        android:title="标签3" />
     <item
-        android:id="@+id/menu_4"
-        android:icon="@mipmap/ic_launcher"
-        android:title="标题1"
-        app:showAsAction="ifRoom" />
-
+        android:id="@+id/action_page_4"
+        android:enabled="true"
+        android:icon="@mipmap/ic_notifications_off_white_24dp"
+        android:title="标签4"
+        android:visible="false" />
     <item
-        android:id="@+id/menu_5"
-        android:icon="@mipmap/ic_launcher"
-        android:title="标题1"
-        app:showAsAction="ifRoom" />
-
+        android:id="@+id/action_page_5"
+        android:enabled="true"
+        android:icon="@mipmap/ic_notifications_none_white_24dp"
+        android:title="标签5"
+        android:visible="false" />
 </menu>
